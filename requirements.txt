@@ -3,3 +3,5 @@ gdown
 opencv-python
 tensorflow
 keras-tuner
+scikit-learn
+pandas
