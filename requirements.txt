@@ -2,5 +2,4 @@ keras>=3.5
 gdown
 opencv-python
 tensorflow
-keras-cv
 keras-tuner
