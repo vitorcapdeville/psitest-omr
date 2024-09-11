@@ -5,3 +5,5 @@ tensorflow
 keras-tuner
 scikit-learn
 pandas
+ipykernel
+matplotlib
