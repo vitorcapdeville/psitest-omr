@@ -5,3 +5,4 @@ otimizacao_hiperparametros/
 models/
 logs/
 datasets/
+venv/
