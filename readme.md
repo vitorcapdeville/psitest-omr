@@ -34,10 +34,6 @@ Após o treinamento do modelo, é possível executar o notebook `predict.ipynb`,
 
 Também é possível avaliar o modelo utilizando o notebook `metrics.ipynb`, que calcula algumas métricas de avaliação do modelo.
 
-Para satisfazer o requerimento da disciplina, também existe o notebook `train-evalueate.ipynb`, que realiza todo o processo de treinamento e avaliação do modelo, com o foco de ser utilizado no google colab.
-
 ## Notas
 
 Existe um boa quantidade de dados para o treinamento do modelo, o que torna o processo relativamente lento e pesado. Por isso, é recomendado o uso de uma GPU para o treinamento do modelo. A GPU será utilizada automaticamente pelo tensorflow, caso esteja disponível. Para instruções de como instalar o tensorflow com suporte a GPU, veja a [documentação oficial](https://www.tensorflow.org/install/pip).
-
-O uso de GPU não está disponível no google colab, e portanto, é recomendado diminuir a quantidade de épocas e o número máximo de tentativas na busca pelos melhores hiperparâmetros.
