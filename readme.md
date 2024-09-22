@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 Para utilizar o projeto com Docker, é necessário ter o Docker instalado na máquina.
 
-Para utilizar o projeto com Docker e usar a GPU, é necessário, além do Docker, ter instalado o (NVIDIA Container Toolkit)[https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installing-the-nvidia-container-toolkit].
+Para utilizar o projeto com Docker e usar a GPU, é necessário, além do Docker, ter instalado o [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installing-the-nvidia-container-toolkit).
 
 Com as ferramentas corretamente instaladas, os containers podem ser inicializados com o comando:
 
