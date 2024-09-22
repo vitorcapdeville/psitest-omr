@@ -10,7 +10,7 @@ A biblioteca `keras-tuner` é utilizada para a otimização dos hiperparâmetros
 
 A biblioteca `scikit-learn` é utilizada para obter algumas métricas de avaliação do modelo.
 
-## Utilização
+## Instalação local
 
 Para realizar o treinamento e avaliação do modelo, é necessário primeiro criar um ambiente virtual.
 
@@ -25,6 +25,22 @@ Então, é preciso instalar as dependências do projeto.
 pip install -r requirements.txt
 ```
 
+## Instalação via Docker
+
+Para utilizar o projeto com Docker, é necessário ter o Docker instalado na máquina.
+
+Para utilizar o projeto com Docker e usar a GPU, é necessário, além do Docker, ter instalado o (NVIDIA Container Toolkit)[https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installing-the-nvidia-container-toolkit].
+
+Com as ferramentas corretamente instaladas, os containers podem ser inicializados com o comando:
+
+```bash
+docker-compose up
+```
+
+Será exibida na tela uma mensagem com o endereço do Jupyter Notebook, que pode ser acessado no navegador ou através da extensão Jupyter Notebooks do VSCode.
+
+## Utilização
+
 Para treinar o modelo, basta seguir o notebook `train.ipynb`.
 
 Neste notebook, os dados serão baixados usando o pacote `gdown`, será realizada a busca pelos melhores hiperparâmetros do modelo utilizando o `keras-tuner` e o modelo será treinado e exportado para a pasta `models/`.
@@ -37,3 +53,5 @@ Também é possível avaliar o modelo utilizando o notebook `metrics.ipynb`, que
 ## Notas
 
 Existe um boa quantidade de dados para o treinamento do modelo, o que torna o processo relativamente lento e pesado. Por isso, é recomendado o uso de uma GPU para o treinamento do modelo. A GPU será utilizada automaticamente pelo tensorflow, caso esteja disponível. Para instruções de como instalar o tensorflow com suporte a GPU, veja a [documentação oficial](https://www.tensorflow.org/install/pip).
+
+Para treinamento do modelo na CPU, é necessário reduzir os valores dos parâmetros `EPOCHS` para algo como 5 e `MAX_TRIALS` para algo perto de 3, caso contrário o treinamento pode demorar muito.
